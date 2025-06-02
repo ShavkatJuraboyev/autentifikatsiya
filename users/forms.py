@@ -10,6 +10,6 @@ class CustomUserForm(forms.ModelForm):
         }
 
 class IntegrationApplicationForm(forms.ModelForm):
-    class Meta:
+    class Meta: 
         model = IntegrationApplication
         fields = ['name', 'redirect_uri', 'description']

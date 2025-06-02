@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
 
+
 urlpatterns = [
     path('', views.index, name='login'),
     path('logout/', views.logout_view, name='logout_view'),
@@ -15,12 +16,6 @@ urlpatterns = [
 
     # Dasturchilar uchun integratsiya arizasi
     path('submit-application/', views.submit_application, name='submit_application'),
-
-    path('application-list/', views.application_list, name='application_list'),
-
-    # Admin arizani tasdiqlash (faqat admin)
-    path('approve-application/<int:app_id>/', views.approve_application, name='approve_application'),
-
     path('my-applications/', views.user_applications, name='user_applications'),
 
 ]

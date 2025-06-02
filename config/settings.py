@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-sl2=id8i*2)%%k30vu_qo^f3@%3ffx=!nl(3q(m!!l%j42&3&c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -60,7 +60,7 @@ AUTHENTICATION_BACKENDS = (
 )
 
 
-LOGIN_URL = 'face_login'
+LOGIN_URL = ''
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': datetime.timedelta(minutes=15),
@@ -147,7 +147,6 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
-STATICFILES_DIRS = [BASE_DIR / 'static']
 MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
